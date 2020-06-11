@@ -8,7 +8,7 @@ export = class QuickerDB {
     remove(a: String): Boolean {
         return db.delete(a);
     }
-    delete(a: String): any{
+    delete(a: String): Boolean {
         return this.remove(a);
     } 
 }
