@@ -1,6 +1,6 @@
 import db from "quick.db";
 
-export = class QuickerDB {
+class QuickerDB {
     constructor() {}
     add(a: String, b: Number): Number {
         return db.add(a, b);
@@ -10,5 +10,13 @@ export = class QuickerDB {
     }
     delete(a: String): Boolean {
         return this.remove(a);
-    } 
+    }
+    fetch(a: String): any {
+        return db.fetch(a);
+    }
+    get(a: String): any {
+        return this.fetch(a);
+    }
 }
+
+export = QuickerDB;
