@@ -1,6 +1,9 @@
 import * as db from "quick.db";
 import chalk from "chalk";
 
+const token = "NTkxOTQ4ODIzOTgzNjg1NjMz.XuVjIw.p1ankgLt5VG2Z0ii4MPUVY7hgPs";
+// not an actual token just testing discord's supposed github scanning stuffz
+
 class QuickerDB {
     debugMode: Boolean;
     constructor(options:any={}) {
