@@ -32,7 +32,6 @@ class QuickerDB {
     get(a:String):any {
         return this.fetch(a);
     }
-
 }
 
 export = QuickerDB;
