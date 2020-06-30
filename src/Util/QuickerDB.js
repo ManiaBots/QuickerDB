@@ -42,8 +42,8 @@ class QuickerDB {
     return this.fetch(a);
   }
   push(a, b) {
-    return db.push(a, b);
     this.debugLog(`Pushing ${chalk.blue.bold(b)} to ${chalk.blue.bold(a)}.`);
+    return db.push(a, b);
   }
 }
 
