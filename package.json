@@ -3,6 +3,7 @@
   "version": "1.2.4",
   "description": "Wrapper for the well known NodeJS module - quick.db",
   "main": "./src/index.js",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "dependencies": {
     "chalk": "^4.0.0",
     "quick.db": "^7.1.1",
