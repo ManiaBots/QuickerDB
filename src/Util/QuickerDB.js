@@ -3,6 +3,7 @@ const db = require("quick.db"),
 
 class QuickerDB {
   constructor(options) {
+    this.version = "1.2.4";
     this.debugMode = options.debug ? true : false;
   }
 
@@ -17,7 +18,7 @@ class QuickerDB {
   }
 
   multiAdd(a) {
-    a.forEach((b) => {
+    a.forEach(b => {
       this.debugLog(
         `Adding ${chalk.blue.bold(b[1])} to ${chalk.blue.bold(b[0])}`
       );
@@ -41,9 +42,15 @@ class QuickerDB {
   get(a) {
     return this.fetch(a);
   }
+
   push(a, b) {
     this.debugLog(`Pushing ${chalk.blue.bold(b)} to ${chalk.blue.bold(a)}.`);
     return db.push(a, b);
+  }
+
+  all() {
+    this.debugLog("Fetching the entire database.");
+    return db.all();
   }
 }
 
