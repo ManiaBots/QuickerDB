@@ -1,0 +1,10 @@
+{
+  "name": "quickerdb",
+  "version": "1.2.4",
+  "description": "Wrapper for the well known NodeJS module - quick.db",
+  "main": "./src/index.js",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "quick.db": "^7.1.1",
+  }
+}
