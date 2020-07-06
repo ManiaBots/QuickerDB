@@ -1,11 +1,16 @@
 {
-  "name": "quickerdb",
-  "version": "1.2.4",
+  "name": "@maniabots/quickerdb",
+  "version": "1.2.6",
   "description": "Wrapper for the well known NodeJS module - quick.db",
   "main": "./src/index.js",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "repository": {
+    "url": "https://github.com/ManiaBots/QuickerDB"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "chalk": "^4.0.0",
-    "quick.db": "^7.1.1",
+    "quick.db": "^7.1.1"
   }
 }
