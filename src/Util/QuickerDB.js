@@ -30,6 +30,7 @@ class QuickerDB {
       this.debugLog(
         `Adding ${chalk.blue.bold(b[1])} to ${chalk.blue.bold(b[0])}`
       );
+      db.add(b[0], b[1])
     });
   }
 
