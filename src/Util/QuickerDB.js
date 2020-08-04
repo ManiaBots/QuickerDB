@@ -7,6 +7,11 @@ class QuickerDB {
     this.debugMode = options.debug ? true : false;
   }
 
+  subtract(a, b) {
+    this.debugLog(`Subtracting ${chalk.blue.bold(b)} from ${chalk.blue.bold(a)}`);
+    return db.subtract(a, b);
+  }
+  
   debugLog(a) {
     if (!this.debugMode) return;
     else console.log(chalk.red.bold("[QuickerDB]"), chalk.yellow(a));
